@@ -149,7 +149,6 @@ rtk
 s6k
 scn
 serotonin
-serotonon
 shc
 shp2
 sirt1

@@ -1,0 +1,79 @@
+\documentclass[11pt]{article}
+
+\usepackage{url,amssymb,epsfig,color,xspace,enumerate}
+\usepackage[a4paper,margin=1.5cm,footskip=.5cm]{geometry}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+\usepackage[pdftitle={CREA Experimental Biology Boston Poster Outline},%
+  pdfsubject={Knowledge Extraction from PubMed Using Natural Language Processing},%
+  pdfauthor={Zhucheng Tu}]{hyperref}
+  
+\newcommand{\tab}{\hspace*{10 mm}}
+
+\begin{document}
+
+\begin{center}
+  \vspace{3mm}
+         {\bf Discovering New Knowledge on the Neuroendocrine System by Extracting Knowledge from PubMed using Natural Language Processing}\\
+\end{center}
+
+\section{Abstract}
+
+This section will briefly summarize:
+
+\begin{itemize}
+\item The need for using AI/NLP to gather biomedical knowledge, using neuroendocrine system as an example.
+\item The methods the group used to gather, process, and visualize knowledge.
+\item The impact of using these methods, and how they can be improved in the future.
+\end{itemize}
+
+\section{Introduction and Background}
+
+\begin{itemize}
+\item Discuss the need to use software to help researchers to see the progress made in knowledge about the neuroendocrine system.
+\item This is essentially a ``Big Data" problem.
+	\begin{itemize}
+		\item \textbf{Volume:} Large number of abstracts on PubMed
+		\item \textbf{Velocity:} New articles on aging published daily
+		\item \textbf{Variety:} Text, illustrations, images, etc. (although we only deal with textual data) 
+	\end{itemize}
+\item Briefly summarize how the group approaches the problem.
+\end{itemize}
+
+\section{Knowledge Extraction and NLP}
+
+\begin{itemize}
+\item How we use keywords to filter and download abstracts, streaming in abstracts as they are published (RSS/Feedly?).
+\item How we use Stanford NLP library to parse sentences.
+\item How we perform pattern matching on the parse tree in Scala to derive relations.
+\end{itemize}
+
+\section{Relation Processing}
+\begin{itemize}
+\item How we can compile relations and export them to CSV format.
+\item How we filter relations, or triples, using a limited set of predicates and subject/objects that are only cells and substances.
+\item How we can relate relations to the body anatomy tree.
+\end{itemize}
+
+\section{Relation Visualization}
+\begin{itemize}
+\item Data representation using nodes and edges, and how clustering can be applied.
+\item Visualization using Gephi.
+\item Description of web app features.
+\item Discuss interesting results we found through the data visualization.
+\end{itemize}
+
+\section{Conclusion}
+\begin{itemize}
+\item Describe what we learned about knowledge of neuroendocrine system as a result of the methods we used.
+\item How the methods we used help us to accomplish our task, and the possibility of generalizing it to help apply it to related studies.
+\item Describe how we can improve the process.
+\end{itemize}
+
+\section{Bibliography}
+
+\section{Appendices}
+
+\end{document}
